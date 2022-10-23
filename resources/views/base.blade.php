@@ -25,8 +25,9 @@
 
 <style>
     #bg{
-        background-image: url('/img/bg.jpg');
+        /* background-image: url('/img/bg.jpg');
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
+        background-color: aquamarine;
     }
 </style>
