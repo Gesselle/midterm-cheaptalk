@@ -50,7 +50,7 @@ class User extends Authenticatable
     public function posts(){
         return $this->hasMany(Post::class);
     }
-    public static function byCategory($category_id){
+    public function byCategory($category_id){
         return User::whereHas('posts', function ($query) use($category_id){
             $query->where('category_id', $category_id);
         })->orderBy('name')->get();
@@ -68,4 +68,4 @@ class User extends Authenticatable
     }
 }
 
-// Just add static between the public function byCategory
+// Just add static between the public (here) function byCategory
