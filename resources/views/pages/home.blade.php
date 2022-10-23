@@ -3,7 +3,7 @@
 @section('content')
 
 
-  <div class="row">
+  {{-- <div class="row">
       <div class="col">
           <select class="form-select" name="gender">
               <option value="all">All</option>
@@ -15,7 +15,7 @@
       <div class="col">
           <input class="form-control" placeholder="Search" type="search"> 
       </div>
-  </div>
+  </div> --}}
 
 <div class="card" >
     <div class="card-header">
