@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-6 offset-md-3">
             
             @if (session('message'))
                <div class="alert alert-success">
@@ -18,7 +18,7 @@
 
             <div class="card mt-3">
 
-                <div class="card-header bg-info text-white text-center">
+                <div class="card-header bg-dark text-white text-center">
                     <h3 class="card-title">Login</h3>
 
                     </div>

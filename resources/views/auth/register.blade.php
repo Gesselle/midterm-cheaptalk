@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-6 offset-md-3">
             @if (session('message'))
                <div class="alert alert-success">
                     {{session('message')}}
@@ -17,7 +17,7 @@
             @endif 
 
             <div class="card mt-3">
-                <div class="card-header bg-info text-white text-center">
+                <div class="card-header bg-dark text-white text-center">
                     <h3 class="card-title">Register</h3>
                     </div>
                     <div class="card-body">
@@ -33,7 +33,6 @@
                             <div class="mb-3">
                                 <label for="gender">Gender</label>
                                 <select name="gender" id="gender" class="form-select">
-                                    <option hidden="true">--Select Gender--</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                 </select>
