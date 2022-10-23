@@ -1,13 +1,12 @@
 @extends('base')
 
 @section('content')
-<div class="container card">
+<div class="container">
   <div class="card-header">
-    <h1>{{ __('Owned by ' . $author->name ) }}</h1>
+    <h1>{{ __('Posted by ' . $author->name ) }}</h1>
   </div>
   
-  <div class="row" style="height: 70vh; overflow:auto;">
-    
+  <div class="row">
     @foreach ($posts as $post)
     <div class="col-md-4 mt-1">
         <div class="card {{$post->user->gender === 'female'? 'f1' : 'm1'}}">
@@ -63,14 +62,8 @@
   .f1{
       background-color: lightpink; 
   }
-  .card .f1:hover{
-      background-color: red;
-  }
   .m1{
       background-color: lightblue;
-  }
-  .card .m1:hover{
-      background-color: blue;
   }
 </style>
 @endsection

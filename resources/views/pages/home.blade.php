@@ -2,20 +2,13 @@
 
 @section('content')
 
-<div class="container">
+
   <div class="row">
       <div class="col">
-          <select class="form-select" name="categories">
+          <select class="form-select" name="gender">
               <option value="all">All</option>
-              <option value="Adventure">Adventure</option>
-              <option value="Business">Business</option>
-              <option value="Comedy">Comedy</option>
-              <option value="Drama">Drama</option>
-              <option value="Horror">Horror</option>
-              <option value="Politics">Politics</option>
-              <option value="Religion">Religion</option>
-              <option value="Romance">Romance</option>
-
+              <option value="male">Male</option>
+              <option value="female">Female</option>
           </select>
       </div>
 
@@ -25,11 +18,11 @@
   </div>
 
 <div class="card" >
-    <div class="card-header bg-warning">
+    <div class="card-header">
         <h3>Recent Posts</h3>
     </div>
 
-    <div class="row" style="height: 100vh; overflow: auto">
+    <div class="row">
     @foreach ($posts as $post)
     <div class="col-md-4 mt-1">
     
@@ -49,11 +42,6 @@
                               @foreach  (App\Models\User::byCategory($post->category_id) as $user)
                               <li><a class="dropdown-item" href="{{url('authors', ['id'=>$user->id])}}">{{$user->name}}</a></li>
                               @endforeach
-
-
-                              {{-- @foreach (App\Models\Category::whereHas('posts')->get()->sortBy('category') as $category)
-                              <li><a class="dropdown-item" href="{{url('categories', ['id'=>$category->id])}}">{{$category->category}}</a></li> 
-                              @endforeach --}}
                             </ul>
                           </li>
         
@@ -83,20 +71,15 @@
         {{ $posts->links() }}
     </div>
 </div> 
-</div>
+
 
 <style>
     .f1{
         background-color: lightpink; 
     }
-    .card .f1:hover{
-        background-color: red;
-    }
+    
     .m1{
         background-color: lightblue;
-    }
-    .card .m1:hover{
-        background-color: blue;
     }
 </style>
 @endsection

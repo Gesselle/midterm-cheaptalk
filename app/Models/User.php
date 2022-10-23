@@ -67,3 +67,5 @@ class User extends Authenticatable
         });
     }
 }
+
+// Just add static between the public function byCategory

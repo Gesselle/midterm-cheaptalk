@@ -12,11 +12,11 @@
             </div>
 
             <a href="{{url('authors', ['id'=>$user->id])}}">
-              <div class="card" >
+            
                 <div class="card-body" >
                   <img class="card" id="pf1" src="{{$user->gender === 'female' ? asset('img/female.jpg') : asset('img/male.jpg')}}" alt="photo">
                 </div>
-              </div>
+              
             </a>
             
             <div class="card-footer">
@@ -40,15 +40,10 @@
   .f1{
       background-color: lightpink; 
   }
-  .card .f1:hover{
-      background-color: red;
-  }
   .m1{
       background-color: lightblue;
   }
-  .card .m1:hover{
-      background-color: blue;
-  }
+  
 </style>
     
 @endsection

@@ -1,13 +1,12 @@
 @extends('base')
 
 @section('content')
-<div class="container">
 <div class="card" >
-    <div class="card-header bg-success">
+    <div class="card-header">
         <h1>{{ __($category->category . ' Posts') }}</h1>
     </div>
     
-    <div class="row" style="height: 100vh; overflow: auto">
+    <div class="row">
     @foreach ($posts as $post)
     <div class="col-md-4 mt-1">
     
@@ -61,19 +60,12 @@
     </div>
   
 </div>
-</div>
 <style>
   .f1{
       background-color: lightpink; 
   }
-  .card .f1:hover{
-      background-color: red;
-  }
   .m1{
       background-color: lightblue;
-  }
-  .card .m1:hover{
-      background-color: blue;
   }
 </style> 
 @endsection
