@@ -62,7 +62,7 @@
 </div>
 <style>
   .f1{
-      background-color: lightpink; 
+      background-color: pink; 
   }
   .m1{
       background-color: lightblue;

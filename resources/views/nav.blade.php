@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-dark mb-2 p-1">
+<nav class="navbar navbar-expand-lg bg-primary mb-2 p-1">
     <div class="container-fluid">
-      <a class="navbar-brand" id="s1" href="/"><h1>Midterm</h1></a>
+      <a class="navbar-brand" id="s1" href="/"><h1>Midterm Cheaptalk</h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,7 +22,7 @@
             </ul>
           </li>
           <a class="nav-link" id="s1" href="/authors">Authors</a>
-          <li class="nav-item dropdown btn btn-sm btn-light">
+          <li class="nav-item dropdown btn btn-sm btn-primary">
             <a class="nav-link dropdown-toggle bg-dark" id="s1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{auth()->user()->name}}
             </a>
@@ -34,7 +34,7 @@
             </ul>
           </li>
 
-          {{-- <a class="nav-link btn btn-danger" href="{{'/logout'}}">Logout</a>   --}}
+          {{-- <a class="nav-link btn btn-warning" href="{{'/logout'}}">Logout</a>   --}}
           @else
           <a class="nav-link"  id="s1" href="/">Home</a>
           <a class="nav-link" id="s1" href="/home">Posts</a>

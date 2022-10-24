@@ -40,7 +40,7 @@
                   </nav>
 
             </div>
-            <div class="card m-3" style="height: 20vh;">
+            <div class="card m-4" style="height: 20vh;">
                 <div class="card-body">
                     <h4>{{$post->post}}</h4>
                 </div>
@@ -60,7 +60,7 @@
 </div>
 <style>
   .f1{
-      background-color: lightpink; 
+      background-color: pink; 
   }
   .m1{
       background-color: lightblue;

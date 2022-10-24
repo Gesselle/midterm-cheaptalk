@@ -57,7 +57,7 @@ class AuthController extends Controller
         Mail::send('auth.verification-mail', ['user'=>$user], function($mail) use ($user){
             $mail->to($user->email);
             $mail->subject('Account Verification');
-            $mail->from('gingcoeddie971@gmail.com', 'Midterm');
+            $mail->from('gesselle03310@gmail.com', 'Midterm');
         });
 
         return redirect('/login')->with('message', 'Your account has been created. Please check your email for verification');

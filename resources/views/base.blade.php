@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Midterm</title>
+    <title>Midterm Project</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -25,9 +25,9 @@
 
 <style>
     #bg{
-        /* background-image: url('/img/bg.jpg');
+        background-image: url('/img/img.jpg');
         background-size: cover;
-        background-repeat: no-repeat; */
+        background-repeat: no-repeat;
         background-color: gray;
     }
 </style>
